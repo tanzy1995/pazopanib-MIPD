@@ -5,7 +5,7 @@ library(mrgsolve)
 
 # - mrgsolve model
 
-my_model <- mread("pazomrgsolve.cpp")
+my_model <- mread("pazomrgsolve2.cpp")
 
 # - a posteriori "Adaptation" function(s): return a dose recommendation, a comment, a specific figure...
 
@@ -53,7 +53,7 @@ adapt_pazo <- function(est, ii, target, ss){
 
 
 ui <- fluidPage(
-  titlePanel("Pazopanib MIPD Shiny APP With Tan Z. Model[PAGE2023,10553]"),
+  titlePanel("Pazopanib MIPD Shiny APP"),
   sidebarLayout(
     sidebarPanel(
       h4("Administration"),
